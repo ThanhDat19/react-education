@@ -9,33 +9,33 @@ import Dashboard from "./views/Dashboard";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/react-education/",
     element: <DefaultLayout />,
     children: [
       {
-        path: "/",
-        element: <Navigate to="/users" />,
+        path: "/react-education/",
+        element: <Navigate to="/react-education/users" />,
       },
       {
-        path: "/dashboard",
+        path: "/react-education/dashboard",
         element: <Dashboard />,
       },
       {
-        path: "/users",
+        path: "/react-education/users",
         element: <Users />,
       },
     ],
   },
   {
-    path: "/",
+    path: "/react-education/",
     element: <GuestLayout />,
     children: [
       {
-        path: "/login",
+        path: "/react-education/login",
         element: <Login />,
       },
       {
-        path: "/signup",
+        path: "/react-education/signup",
         element: <Signup />,
       },
     ],

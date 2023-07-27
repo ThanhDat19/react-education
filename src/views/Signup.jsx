@@ -16,7 +16,7 @@ export default function Signup() {
           <input type="password" placeholder="Password Confirmation...." />
           <button className="btn btn-block">Signup</button>
           <p className="message">
-            Already Registered? <Link to="/login">Sign in</Link>
+            Already Registered? <Link to="/react-education/login">Sign in</Link>
           </p>
         </form>
       </div>

@@ -6,7 +6,7 @@ export default function DefaultLayout() {
   const { user, token } = useStateContext();
 
   if (!token) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/react-education/login" />;
   }
 
   const onLogout = (e) =>{
@@ -17,8 +17,8 @@ export default function DefaultLayout() {
   return (
     <div id="defaultLayout">
       <aside>
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/users">Users</Link>
+        <Link to="/react-education/dashboard">Dashboard</Link>
+        <Link to="/react-education/users">Users</Link>
       </aside>
       <div className="content">
         <header>
